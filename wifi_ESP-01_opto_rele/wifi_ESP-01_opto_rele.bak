@@ -10,7 +10,7 @@ Date "2018-10-06"
 Rev "Modulo 1.0"
 Comp "FIUBA-CESE"
 Comment1 "Autor: Christian Yánez"
-Comment2 ""
+Comment2 "Copyright (c) 2018, CESE 6ta Co FIUBA"
 Comment3 ""
 Comment4 ""
 $EndDescr
