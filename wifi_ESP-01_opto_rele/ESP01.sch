@@ -10,8 +10,8 @@ Date "2018-10-06"
 Rev "Modulo 1.0"
 Comp "FIUBA-CESE"
 Comment1 "Autor: Christian Yánez"
-Comment2 "Copyright (c) 2018, CESE 6ta Co FIUBA"
-Comment3 ""
+Comment2 "Licencia: https://github.com/Christianyf/CESE_6Co_PCB/blob/master/licencia.txt"
+Comment3 "Copyright (c) 2018, CESE 6ta Co FIUBA"
 Comment4 ""
 $EndDescr
 $Comp
@@ -92,12 +92,12 @@ Wire Wire Line
 $Comp
 L power:GNDA #PWR0207
 U 1 1 5BBAEAD6
-P 6300 3050
-F 0 "#PWR0207" H 6300 2800 50  0001 C CNN
-F 1 "GNDA" H 6305 2877 50  0000 C CNN
-F 2 "" H 6300 3050 50  0001 C CNN
-F 3 "" H 6300 3050 50  0001 C CNN
-	1    6300 3050
+P 6300 3300
+F 0 "#PWR0207" H 6300 3050 50  0001 C CNN
+F 1 "GNDA" H 6305 3127 50  0000 C CNN
+F 2 "" H 6300 3300 50  0001 C CNN
+F 3 "" H 6300 3300 50  0001 C CNN
+	1    6300 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -221,8 +221,6 @@ $EndComp
 Wire Wire Line
 	7850 1950 7850 2150
 Wire Wire Line
-	6300 3050 6050 3050
-Wire Wire Line
 	6800 5000 7050 5000
 Wire Wire Line
 	6800 2900 7050 2900
@@ -237,7 +235,7 @@ AR Path="/5BBAD340" Ref="J?"  Part="1"
 AR Path="/5BBABA67/5BBAD340" Ref="J203"  Part="1" 
 F 0 "J203" H 5850 3000 50  0000 L CNN
 F 1 "Conn_02x04_Odd_Even_MountingPin" H 5250 2900 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 5850 3550 50  0001 C CNN
+F 2 "w_conn_mkds:PinSocket_2x04_P2.54mm_Vertical" H 5850 3550 50  0001 C CNN
 F 3 "~" H 5850 3550 50  0001 C CNN
 	1    5850 3550
 	-1   0    0    -1  
@@ -256,8 +254,6 @@ Wire Wire Line
 	6050 3550 6800 3550
 Wire Wire Line
 	6800 3550 6800 2900
-Wire Wire Line
-	6050 3050 6050 3450
 Wire Wire Line
 	6050 3650 6800 3650
 Wire Wire Line
@@ -462,7 +458,7 @@ Text Notes 3200 5700 0    98   ~ 0
 Conectores para alimentación y aislamiento
 Text Notes 3350 3050 0    98   ~ 0
 Fuente regulada 3.3v
-Text Notes 5250 2700 0    98   ~ 0
+Text Notes 5250 2250 0    98   ~ 0
 Conector para\nmódulo ESP01\n    externo
 Text Notes 7400 1550 0    98   ~ 0
 Circuito para \n manejo de \n   salidas\n     GPIO
@@ -472,8 +468,6 @@ Text Notes 4800 3650 0    50   ~ 0
 (3.3v)
 Wire Notes Line
 	4100 3400 4100 3100
-Wire Notes Line
-	5800 3300 5800 2800
 Text Notes 750  6450 0    50   ~ 0
 ESP01: Módulo wifi (ver documentación anexa)
 Text Notes 750  6600 0    50   ~ 0
@@ -484,4 +478,38 @@ Text Notes 750  6900 0    50   ~ 0
 J201: Conector para voltaje de entrada 5v señal de control
 Text Notes 750  7050 0    50   ~ 0
 J202: Conector para fuente externa
+Wire Notes Line
+	5700 3150 5700 2750
+Wire Notes Line
+	5700 2750 5900 2750
+Wire Notes Line
+	5900 2750 5900 3150
+Wire Notes Line
+	5700 3150 5900 3150
+Text Notes 5950 2800 0    50   ~ 0
+1 GND
+Text Notes 5950 2900 0    50   ~ 0
+2 GPIO2
+Text Notes 5950 3050 0    50   ~ 0
+3 GPIO0
+Text Notes 5950 3150 0    50   ~ 0
+4 RXD
+Text Notes 5450 2800 0    50   ~ 0
+TXD 5
+Text Notes 5350 2900 0    50   ~ 0
+CH_PD 6
+Text Notes 5350 3050 0    50   ~ 0
+RESET 7
+Text Notes 5450 3150 0    50   ~ 0
+VCC 8
+Wire Wire Line
+	6050 3450 6050 3250
+Wire Wire Line
+	6050 3250 6300 3250
+Wire Wire Line
+	6300 3250 6300 3300
+Wire Notes Line
+	5800 3350 5800 3200
+Wire Notes Line
+	5800 2650 5800 2350
 $EndSCHEMATC

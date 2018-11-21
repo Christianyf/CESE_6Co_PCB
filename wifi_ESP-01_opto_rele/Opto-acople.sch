@@ -10,8 +10,8 @@ Date "2018-10-06"
 Rev "Modulo 1.0"
 Comp "FIUBA-CESE"
 Comment1 "Autor: Christian Yánez"
-Comment2 "Copyright (c) 2018, CESE 6ta Co FIUBA"
-Comment3 ""
+Comment2 "Licencia: https://github.com/Christianyf/CESE_6Co_PCB/blob/master/licencia.txt"
+Comment3 "Copyright (c) 2018, CESE 6ta Co FIUBA"
 Comment4 ""
 $EndDescr
 $Comp
@@ -426,37 +426,4 @@ Wire Wire Line
 	6600 2800 6500 2800
 Text Label 7500 2350 2    50   ~ 0
 COM0
-$Comp
-L Mechanical:MountingHole F301
-U 1 1 5BBC1A9F
-P 4200 6150
-F 0 "F301" H 4300 6196 50  0000 L CNN
-F 1 "MountingHole" H 4300 6105 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2mm_Outer" H 4200 6150 50  0001 C CNN
-F 3 "~" H 4200 6150 50  0001 C CNN
-	1    4200 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole F302
-U 1 1 5BBC1AED
-P 4200 6400
-F 0 "F302" H 4300 6446 50  0000 L CNN
-F 1 "MountingHole" H 4300 6355 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2mm_Outer" H 4200 6400 50  0001 C CNN
-F 3 "~" H 4200 6400 50  0001 C CNN
-	1    4200 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole F303
-U 1 1 5BBC1B33
-P 5050 6150
-F 0 "F303" H 5150 6196 50  0000 L CNN
-F 1 "MountingHole" H 5150 6105 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Dia_2mm_Outer" H 5050 6150 50  0001 C CNN
-F 3 "~" H 5050 6150 50  0001 C CNN
-	1    5050 6150
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

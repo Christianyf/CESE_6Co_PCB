@@ -1,5 +1,7 @@
 LICENSE:
-/* Copyright (c) 2018, CESE 6ta Co FIUBA
+/* Copyright (c) 2018,CESE 6ta Co FIUBA 
+ *
+ * Autor: Christian Yanez 
  * 
  * This file is part of CIAA Hardware.
  *
