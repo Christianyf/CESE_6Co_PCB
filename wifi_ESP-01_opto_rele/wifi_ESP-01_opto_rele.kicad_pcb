@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.6)
     (user_trace_width 0.8)
     (user_trace_width 1)
@@ -343,6 +343,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/shapes3D/relay_HJR-3FF_Z.wrl
+      (offset (xyz 0 -8 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module TerminalBlock:TerminalBlock_bornier-3_P5.08mm (layer F.Cu) (tedit 59FF03B9) (tstamp 5BBA3C25)
@@ -384,6 +389,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/shapes3D/mkds_1,5-3.wrl
+      (offset (xyz 5 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (module TerminalBlock:TerminalBlock_bornier-3_P5.08mm (layer F.Cu) (tedit 59FF03B9) (tstamp 5BC5CFCF)
@@ -424,6 +434,11 @@
       (offset (xyz 5.079999923706055 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/shapes3D/mkds_1,5-3.wrl
+      (offset (xyz 5 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -688,6 +703,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/shapes3D/mkds_1,5-2.wrl
+      (offset (xyz 2.5 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module TerminalBlock:TerminalBlock_bornier-2_P5.08mm (layer F.Cu) (tedit 59FF03AB) (tstamp 5BC5CFF9)
@@ -724,6 +744,11 @@
       (net 8 GND))
     (model ${KISYS3DMOD}/TerminalBlock.3dshapes/TerminalBlock_bornier-2_P5.08mm.wrl
       (offset (xyz 2.539999961853027 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/shapes3D/mkds_1,5-2.wrl
+      (offset (xyz 2.5 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -859,6 +884,11 @@
       (net 6 /Opto-aclope/COM0))
     (model ${KISYS3DMOD}/Relay_THT.3dshapes/Relay_SPDT_Omron-G5LE-1.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/shapes3D/relay_HJR-3FF_Z.wrl
+      (offset (xyz 0 -8 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1730,7 +1760,7 @@
   (segment (start 105.46 81.25) (end 105.5 81.29) (width 0.8) (layer F.Cu) (net 27))
   (segment (start 102.75 81.25) (end 105.46 81.25) (width 0.8) (layer F.Cu) (net 27))
 
-  (zone (net 1) (net_name GNDA) (layer F.Cu) (tstamp 5C0D5977) (hatch edge 0.508)
+  (zone (net 1) (net_name GNDA) (layer F.Cu) (tstamp 5BF5F1FC) (hatch edge 0.508)
     (connect_pads (clearance 0.8))
     (min_thickness 0.6)
     (fill yes (arc_segments 16) (thermal_gap 0.7) (thermal_bridge_width 0.7))
@@ -1942,7 +1972,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 5C0D5971) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 5BF5F1F9) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.3)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1957,7 +1987,7 @@
       )
     )
   )
-  (zone (net 8) (net_name GND) (layer B.Cu) (tstamp 5C0D5974) (hatch edge 0.508)
+  (zone (net 8) (net_name GND) (layer B.Cu) (tstamp 5BF5F1F6) (hatch edge 0.508)
     (connect_pads (clearance 0.8))
     (min_thickness 0.6)
     (fill yes (arc_segments 16) (thermal_gap 0.7) (thermal_bridge_width 0.7))
